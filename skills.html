@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Nimragraphix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #051139;
+      --secondary-color: #4ECDC4;
+      --bg-color: #f0f0f4;
+      --text-color: #1a1a1a;
+      --footer-bg: #d6cfcf;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: var(--bg-color);
+      position: relative;
+    }
+
+    /* Background image */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('./images/15630.jpg') no-repeat center center/cover;
+      opacity: 0.1; /* Adjust transparency here */
+      z-index: -1;
+    }
+
+    header {
+      background: var(--footer-bg);
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--primary-color);
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: color 0.3s, background 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+      background: var(--primary-color);
+    }
+
+    .content {
+      display: flex;
+      flex: 1;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .skills-section {
+      flex: 1;
+    }
+
+    .skills-section h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      border-bottom: 2px solid var(--secondary-color);
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .skills-section ul {
+      list-style-type: disc;
+      margin-left: 2rem;
+      line-height: 1.8;
+    }
+
+    .skills-section ul li {
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+
+    .image-section {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .image-section .center-image {
+      width: 300px; /* Adjust the size of the image */
+      height: 300px; /* Adjust the size of the image */
+      background: url('./images/2151585276.jpg') no-repeat center center/cover;
+      border: 2px solid var(--primary-color);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background: var(--footer-bg);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>nimragraphix</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="skills-section">
+      <h1>Technical Skills</h1>
+      <ul>
+        <li>Logo Design</li>
+        <li>Poster Design</li>
+        <li>UI/UX Design</li>
+        <li>Business Card Design</li>
+        <li>Social Media Content</li>
+        <li>Invitation Card Design</li>
+      </ul>
+
+      <h1>Soft Skills</h1>
+      <ul>
+        <li>Creativity</li>
+        <li>Communication</li>
+        <li>Leadership</li>
+      </ul>
+    </div>
+
+    <div class="image-section">
+      <div class="center-image"></div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Nimra Rafique | nimragraphix. All rights reserved.
+  </footer>
+</body>
+</html>
